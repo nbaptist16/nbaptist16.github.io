@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eng | NB</title>
+        
+        <!--style stuff-->
+    <link href="../freshstyles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/favicon.png">
+    
+    <meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Lato fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">        
+
+    <!-- google fonts! -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- source sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- roboto mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div class="navz">
+                <div class="container">
+                    <img src="../src/doghaus.png" alt="home button" style="margin-left: 15px; margin-right: 20px" class="navimg" id="navimg">
+                    <div class="overlay" style="margin-left: 15px;">
+                        <a href="../index.html" style="padding-left: 15px; padding-top: 100px;"><img style="padding-left: 15px;" class="navicon"></a>
+                    </div>
+                </div>
+                <!-- <img src="../src/copee-a2z-1_xsmall_highlight.png" alt="logo" style="opacity: 1; margin-right: 200px;"> -->
+                <h1 style="font-family: Roboto Mono; font-weight: 500; margin: auto;">Nicole Baptist</h1>
+    
+                <div class="navflex-links">
+                    <a href="../index.html" onclick="press()" class="buttontxt">HOME</a>
+                    <a href="../about.html" onclick="press()" class="buttontxt">ABOUT</a>
+                    <a href="../art.html" onclick="press()" class="buttontxt">ART</a>
+                    <a href="index.html" onclick="press()" class="buttontxt">(Z)ENGINEERING</a>
+                    <a href="../contact.html" onclick="press()" class="buttontxt">CONTACT</a>
+                </div>
+            </div>
+    
+            <!-- main body -->
+            <div id = "page-body">
+                <div style="display: flex; flex-direction: row;">
+                    <div class="sidenav">
+                        <!-- <iframe width="350" height="198" style="margin: 5px auto;" src="https://www.youtube.com/embed/rvvCyIzOvao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="350" height="198" style="margin: 5px auto;" src="https://www.youtube.com/embed/lioO70SsfmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             -->
+                        <iframe width="95%" height="auto" style="margin: 5px auto;" src="https://www.youtube.com/embed/rvvCyIzOvao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="95%" height="auto" style="margin: 5px auto;" src="https://www.youtube.com/embed/lioO70SsfmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div>
+                            <h2 style="text-align: center;">Skills Used</h2>
+
+                            <div id="feat" style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;">
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Python</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Coppelia Sim</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">PI Control</p>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <h2 style="text-align: center;">Additional Info</h2>
+                            <small><br></small>
+                            <div style="display: flex; flex-direction: row; justify-content: center;">
+                                <a href="https://www.youtube.com/playlist?list=PLvOVrMMXG2AY4qePSTiqES6wBbzYzE7oP"><img class="youtube" alt="youtube icon" src="../src/icon_yt_x.svg" width="35px" height="35px"></a>
+                                <a href="http://hades.mech.northwestern.edu/index.php/Mobile_Manipulation_Capstone"><img class="docz" alt="docz icon" src="../src/icon_doc_g2.svg" width="35px" height="35px"></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="main">
+                        <div style="margin: 30px;">
+                            <!-- content here -->
+                            <h1 style="text-align: center;">Da SIMS: A KUKA youBot Simulation</h1>
+                            <p style="text-align: center;"><b>*Patrick Star voice*</b> iBot, youBot, he-she-meBot</p>
+                            <p><br></p>
+                            <p align="center">
+                                <center>
+                                    <img src="../src/kukaenv.png" width="800px" height="auto">
+                                </center>
+                            </p>
+
+                            <br>
+
+                            <h3>Overview:</h3>
+                            <p>
+                                The final project for <code>Robotic Manipulation</code> that utilizes Python and the ModernRobotics (mr) library to manipulate a Kuka YouBot (simulated in CoppeliaSim) that picks up a block from one location and places it in another.
+                                <br>
+                                <br>
+                                This simulation was repeated three times, each with a different combination of initial conditions and controllers.
+                                <br>
+                                More information on the project requirements and the KUKA youBot can be found <a href="http://hades.mech.northwestern.edu/index.php/Mobile_Manipulation_Capstone" target="_blank" style="margin: auto; text-decoration: none; font-weight: bold;">here</a>.
+                            </p>
+                            <hr>
+                            
+                            <h3>Components:</h3>
+                            <p>
+                                The deliverables of this project are as follows:<br>
+                                <br>
+                                &emsp; * README file (.md/pdf) to summarize findings (<a href="src/youREADME.pdf" target="_blank" style="margin: auto; text-decoration: none; font-weight: bold;">view</a>)<br>
+                                &emsp; * CODE directory containing the following:<br>
+                                &emsp;&emsp;&emsp; 1. TrajectoryGenerator.py<br>
+                                &emsp;&emsp;&emsp; 2. NextState.py<br>
+                                &emsp;&emsp;&emsp; 3. FeedbackControl.py<br>
+                                &emsp;&emsp;&emsp; 4. Mane.py*<br>
+                                &emsp; * RESULTS directory** containing the following:<br>
+                                &emsp;&emsp;&emsp; 1. A brief background info README file noting the controller's type and feedback gains<br>
+                                &emsp;&emsp;&emsp; 2. The robot data .csv file used to run the simulation<br>
+                                &emsp;&emsp;&emsp; 3. A video of the simulation in action<br>
+                                &emsp;&emsp;&emsp; 4. The corresponding X_err .csv file<br>
+                                &emsp;&emsp;&emsp; 5. A plot of the X_err output over time (all 6 elements)<br>
+                                &emsp;&emsp;&emsp; 6. A log file showing the program being called with the input*<br>
+                                <br>
+                                **The results are organized as BEST, OVERSHOOT, and NEW_TASK<br>
+                                <br>
+                                *The above deliverables can be achieved by running the Mane.py script in a code editor (such as VSCode by clicking the green run button in the top right corner).<br>
+                                <br>
+                                The above mentioned Python files require the following libraries:<br>
+                                <br>
+                                &emsp; * modern_robotics<br>
+                                &emsp; * numpy<br>
+                                &emsp; * logging<br>
+                                &emsp; * matplotlib<br>
+                                &emsp; * mrcapstone (custom made library containing the 3 milestone functions)<br>
+                                <small><br>&emsp;&emsp;Please ensure that these libraries are installed before running Mane.py.</small><br>
+                                <br>
+                                <small>Ps: I can (mostly) spell don't worry</small>
+                            </p>
+                            <hr>
+                            <h3>Instructions:</h3>
+                            <p>
+                                This code can be run in any code editor. All variables required are built into the code and can be edited within the .py files.<br>
+                                <br>
+                                Individual calls for each function can also be found in the respective function's docstring.<br>
+                                <small>Please remember to import the function before calling it!</small>
+                            </p>
+
+                            <br>
+
+                            <h3>Background:</h3>
+                            <p>
+                                <i>TrajectoryGenerator.py:</i><br>
+                                The CartesianTrajectory functinon from modern_robotics was used to calculate the reference trajectory for end-effector frame {e} consisting of 8 concatenated trajectory segments which all begin and end at rest. It computes a trajectory as a list of N SE(3) matrices and then saves the eight-segment reference trajectory as a csv file.<br>
+                                <center><small>T_se: r11, r12, r13, r21, r22 ,r23, r31, r32, r33, px, py, pz, gripper (0pen or c1osed)</small><br></center>
+                            </p>
+
+                                <br>
+                            
+                            <p>
+                                An example call: <code>TrajectoryGenerator(T_sei, T_sci, T_scf, T_ceg, T_ces, k)</code><br>
+                            </p>
+                            
+                                <br>
+                            
+                            <p>
+                                Where its inputs are:<br>
+                                &emsp; * end-effector initial config (T_sei)<br>
+                                &emsp; * cube's initial config (T_sci)<br>
+                                &emsp; * cube's desired configuration (T_scf)<br>
+                                &emsp; * end-effector's config relative to cube @ grasp (T_ceg)<br>
+                                &emsp; * end-effector's standoff config @ not-grasp (T_ces)<br>
+                                &emsp; * number of trajectory reference configs per 0.01 sec (k)<br>
+                                &emsp;&emsp;<small>k = int >= 1</small><br>
+                                <br>
+                                and its outputs are:<br>
+                                &emsp; * representation of N end-effector configs (each representing T_se)<br>
+                                &emsp; * csv file of eight-segment reference trajectory<br>
+                                <br>
+                                and the frames used are:<br>
+                                &emsp; * {e}: end effector<br>
+                                &emsp; * {c}: cube<br>
+                                &emsp; * {s}: space<br>
+                                <br>
+                                This script can be tested independently with <a href="http://hades.mech.northwestern.edu/index.php/CoppeliaSim_Introduction#Scene_8:_CSV_youBot_End-Effector_Animation" target="_blank" style="margin: auto; text-decoration: none; font-weight: bold;">CoppeliaSim scene 8</a>.
+                            </p>
+                            <!-- <center><p>--------</p></center> -->
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <p>
+                                <i>NextState.py:</i><br>
+                                This script computes the new configurations of the arms and wheels and outputs the results as a csv file based on a simple
+                                first-order Euler-step.<br>
+                                &emsp; * F = Hcross(0) = pseudo-inverse of H(0)<br>
+                                &emsp; * new = old + (speeds * Δt) ≤--because of Euler step<br>
+                            </p>
+
+                                <br>
+                            
+                            <p>
+                                An example call: <code>NextState(config, speeds, t_step, w_max)</code><br>
+                            </p>
+
+                                <br>
+                            
+                            <p>
+                                Where its inputs are:<br>
+                                &emsp; * config - 12-vector representing the current configuration of the robot<br>
+                                &emsp;&emsp;<small>3 @ chassis, 5 @ arm, 4 @ wheel angles (q)</small><br>
+                                &emsp; * speeds - 9-vector of controls indicating arm joint speeds (dθ, 5) and wheel speeds (u, 4)<br>
+                                &emsp; * t_step - timestep (Δt)<br>
+                                &emsp; * w_max  - maximum angular speed of the arm joints and the wheels (+ω ∈ R)<br>
+                                <br>
+                                and its outputs are:<br>
+                                &emsp; * q_new  - 12-vector representing the configuration of the robot time Δt later<br>
+                                &emsp;&emsp;<small>(updated version of config with its correspoinding csv file)</small><br>
+                                <br>
+                                <small>Note: dimensions were found <a href="http://hades.mech.northwestern.edu/index.php/Mobile_Manipulation_Capstone" target="_blank" style="margin: auto; text-decoration: none; font-weight: bold;">here</a></small>
+                            </p>
+                            <!-- <center><p>--------</p></center> -->
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <p>
+                                <i>FeedbackControl.py:</i><br>
+                                Uses modern_robotics functions such as JacobianBody and Adjoint to calculate the commanded twist, speeds, and x_err of the simulation (and-- you guessed it-- outputs the result as a csv file). It calculates the kinematic task-space feedforward + feedback control law
+                                based on the following equations:<br>
+                                <center><code>dθ_e(t) + (1/t)*θ_e(t) = 0                                          (11.16)</code><br></center>
+                                <center><code>V(t) = [Ad_((X^−1)*X_d)]*V_d(t) + K_p*X_err(t) + Ki*∫X_err(t)dt     (13.37)</code><br></center>
+                            </p>
+
+                                <br>
+                            
+                            <p>
+                                An example call: <code>FeedbackControl(qq, xd, xn, kp, ki, dt)</code><br>
+                            </p>
+
+                                <br>
+                            
+                            <p>
+                                Where its inputs are:<br>
+                                &emsp; * qq - robot configuration (for T_se)<br>
+                                &emsp; * xd - current end-effector reference configuration (T_se,d)<br>
+                                &emsp; * xn - next end-effector reference configuration at time Δt later (T_se,d,next)<br>
+                                &emsp; * kp - proportional gain matrix for PI control (K_p)<br>
+                                &emsp; * ki - integral gain matrix for PI control (K_i)<br>
+                                &emsp; * dt - timestep between reference trajectory configurations (Δt)<br>
+                                &emsp; * qq - chassis configuration<br>
+                                <br>
+                                and its outputs are:<br>
+                                &emsp; * v  - commanded end-effector twist expressed in the end-effector frame {e}<br>
+                                &emsp; * vel- output speeds(u, d0)<br>
+                                &emsp; * xe - error output<br>
+                            </p>
+                            <!-- <center><p>--------</p></center> -->
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <p>
+                                <i>Mane.py:</i><br>
+                                Throws all the functions together. It also logs, saves csvs, and plots x_err data.
+                            </p>
+                            <hr>
+                            <h3>Results:</h3>
+                            <p>
+                                The best controller is the best, as it should be. It was chosen because it has no overshoot or oscillation. Although it is not particularly fast (as seen in the error plot), for this application, this slower, more robust controller is better than one that is fast with a lot of oscillation and overshoot.<br>
+                                <center><img src="../src/best.png" width="600px" height="auto"></center>
+                                <center><small>Transient response for best controller (used for best and newTask)</small></center>
+                            </p>
+
+                                <br>
+                            
+                            <p>
+                                The overshoot controller, as seen in the figure below, has a lot of overshoot. Shocker. This is because it includes a large ki (= 60), which is often not used for robotics applications for this exact reason.<br>
+                                
+                                <br>
+                                
+                                <center><img src="../src/overshoot.png" width="700px" height="auto"></center>
+                                <center><small>Transient response for overshoot controller</small></center>
+                            </p>
+                        </div>
+                         
+                        
+        
+                        
+                    </div>
+                    
+                </div>
+                <!-- <div id="page-footer" style="margin: 0px; "> -->
+                <div id="page-footer" style="margin-left: 20%; width: 80%;">
+                    <div class="footz-img">
+                        <!-- img -->
+                        <img src="../src/contact_transp.png" width="auto" height="200px">
+                    </div>
+                    <div class="footz-info">
+                        <!-- info -->
+                            <a href="https://www.youtube.com/channel/UCZkRKwl5dwA0-_EWymjMdJQ" class="youtube" alt="youtube icon"><img src="../src/icon_yt_x.svg" width="35px" height="35px"></a>
+                            <a href="https://www.instagram.com/nicolpickl/" class="instagram" alt="instagram icon"><img src="../src/icon_ig_x.svg" width="35px" height="35px"></a>
+                            <a href="https://www.linkedin.com/in/nicole-baptist-105a43175?trk=public_profile_samename-profile" class="linkedin" alt="linkedin icon"><img src="../src/icon_in_x.svg" width="35px" height="35px"></a>
+                            <a href="https://github.com/nbaptist16" class="github" alt="github icon"><img src="../src/icon_gh_x.svg" width="35px" height="35px"></a>
+    
+                            <p style="color: black;">© 2021 by yours truly.</p>
+                            <small style="color: black;">Built from scratch with ♡ via BaptistBot.</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+<!-- add filters down here so they don't make a mess of the page layout (i think) -->
+<!-- https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/ -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="documentz">
+        <!-- <filter id="id-of-your-filter" x="-100%" y="-100%" height="300%" width="300%"> -->
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.29 0   0   0   0
+                        0   1.00  0   0   0
+                        0   0   0.09  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="youtubez">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="1.00 0   0   0   0
+                        0   0.19  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="instagramz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="1.00 0   0   0   0
+                        0   0.80  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/>
+      <!-- <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.96 0   0   0   0
+                        0   1.00  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/> -->
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="linkedinz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.13 0   0   0   0
+                        0   0.55  0   0   0
+                        0   0   1.00  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="githubz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.67 0   0   0   0
+                        0   0.13  0   0   0
+                        0   0   1.00  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+    
+</html>

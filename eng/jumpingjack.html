@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eng | NB</title>
+        
+        <!--style stuff-->
+    <link href="../freshstyles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/favicon.png">
+    
+    <meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Lato fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">        
+
+    <!-- google fonts! -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- source sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">  -->
+
+    <!-- roboto mono -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div class="navz">
+                <div class="container">
+                    <img src="../src/doghaus.png" alt="home button" style="margin-left: 15px; margin-right: 20px" class="navimg" id="navimg">
+                    <div class="overlay" style="margin-left: 15px;">
+                        <a href="../index.html" style="padding-left: 15px; padding-top: 100px;"><img style="padding-left: 15px;" class="navicon"></a>
+                    </div>
+                </div>
+
+                <!-- title (a2zeng) -->
+                <!-- <img src="../src/copee-a2z-1_xsmall_highlight.png" alt="logo" style="opacity: 1; margin-right: 200px;"> -->
+                <h1 style="font-family: Roboto Mono; font-weight: 500; margin: auto;">Nicole Baptist</h1>
+    
+                <div class="navflex-links">
+                    <a href="../index.html" onclick="press()" class="buttontxt">HOME</a>
+                    <a href="../about.html" onclick="press()" class="buttontxt">ABOUT</a>
+                    <a href="../art.html" onclick="press()" class="buttontxt">ART</a>
+                    <a href="index.html" onclick="press()" class="buttontxt">(Z)ENGINEERING</a>
+                    <a href="../contact.html" onclick="press()" class="buttontxt">CONTACT</a>
+                </div>
+            </div>
+    
+            <!-- main body -->
+            <div id = "page-body">                
+                <div style="display: flex; flex-direction: row;">
+                    <div class="sidenav">
+                        <iframe width="95%" height="auto" style="margin: 5px auto;" src="https://www.youtube.com/embed/uUmgaUgYXVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                        <div>
+                            <h2 style="text-align: center;">Skills Used</h2>
+
+                            <div id="feat" style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;">
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Python</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Lagrangian Dynamics</p>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <h2 style="text-align: center;">Additional Info</h2>
+                            <small><br></small>
+                            <div style="display: flex; flex-direction: row; justify-content: center;">
+                                <a href="https://www.youtube.com/watch?v=uUmgaUgYXVE"><img class="youtube" alt="youtube icon" src="../src/icon_yt_x.svg" width="35px" height="35px"></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="main">
+                        <div style="margin: 30px;">
+                            <!-- content here -->
+                            <h1 style="text-align: center;">Jumping Jack</h1>
+                            <p style="text-align: center;">*Tom Petty voice* FREE! FALLIN!</p>
+                            <p><br></p>
+                            <p align="center">
+                                <img src="../src/projectthumbs/jacks.png" height="400px" width="auto">
+                            </p>
+                            <h3>Overview:</h3>
+                            <p>
+                                The final project for <code>Theory of Machine Dynamics</code> that utilized Lagrangian dynamics to model and animate a chosen system.
+                                <br>
+                                The system involves two bodies (the jack and the box) and six degrees of freedom (x, y, and θ each for both the jack and the box). Both bodies experience rotational inertia, impacts, and external forces.
+                                In order to keep the simulation feasible, the system is limited to 2D movement within a plane (as represented by the animation) and no spheres or circular shapes are involved to ensure that the impacts have some sort of nontrivial update.
+                                The goal of this project is to calculate the trajectory of a jack in a box and animate the two objects' interaction with each other and their environment.
+                            </p>
+
+                            <hr>
+
+                            <center><img src="../src/jacksimg/130740510_2901903760134603_7812727924773775602_n.jpg" width="400px" height="auto"></center>
+                            <center><small>Labeled diagram of reference frames</small></center>
+                            <p>
+                                <br>
+                                In the above diagram are all of the frames used with frame labels. It also includes all of the rigid body transformations used between the frames. These frames and their labels can also be found in the code.
+                            </p>
+
+                            <hr>
+
+                            <h3>Code:</h3>
+                            <p>The code is written exclusively in <b>Python</b> and requires the following packages:</p>
+                            <p>* <code>math:</code> used to calculate quantities with pi</p>
+                            <p>* <code>matplotlib.pyplot:</code> used to plot the trajectories of the box and jack over time</p>
+                            <p>* <code>numpy:</code> used to perform matrix math calculations</p>
+                            <p>* <code>plotly.graph_objects:</code> used in animation function for markers</p>
+                            <p>* <code>sympy:</code><br>
+                                &emsp; used <i>Function</i> and <i>symbols</i> to define variables and dummy variables<br>
+                                &emsp; used <i>sin</i>, <i>cos</i>, <i>lambdify</i>, <i>Matrix</i>, <i>Eq</i>, and <i>solve</i> for mathematical calculations<br>
+                                &emsp; used <i>simplify</i> to expedite computations
+                            </p>
+                            <p>
+                                * <code>plotly.offline:</code> used <i>init_notebook_mode</i> and <i>iplot</i> for animation function
+                            </p>
+                            <p>
+                                * <code>IPython.display:</code> used <i>display</i> and <i>HTML</i> for animation function
+                            </p>
+                            <p>
+                                * <code>IPython.core.display:</code> used <i>HTML</i> to display reference diagrams<br>
+                            </p>
+                            <hr>
+                            <h3>Calculations:</h3>
+                            <p>
+                                <code>Initialization:</code><br>
+                                Initialized the following parameters:<br>
+                                <small>
+                                    &emsp; g = 9.8 (gravity) &ensp; lb = 5 (length of box side) &ensp; mb = 10 (mass of box) &ensp; lj = 1 (length of jack) &ensp; mj = 1 (mass of jack)<br>
+                                    <b>(functions</b>, inc. derivatives<b>)</b><br>
+                                    &emsp; xb = x_box &ensp; yb = y_box &ensp; thetab = theta_box &ensp; xj = x_jack &ensp; yj = y_jack &ensp; thetaj = theta_jack &ensp; q = all parameters
+                                </small> 
+                            </p>
+                            <p>
+                                <code>Euler-Lagrange equations:</code><br>
+                                Firstly, the Lagrangian was calculated with the equation:
+                            </p>
+
+                            <br>
+
+                            <center><img src="../src/jacksimg/lag.png" width="400px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <p>
+                                to get the following result:
+                            </p>
+                            
+                            <small>
+                                <br>
+                            </small>
+
+                            <center><img src="../src/jacksimg/actual_lag.png" width="500px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <p>
+                                The calculate Lagrangian was then used in the eqation:
+                            </p>
+
+                            <small>
+                                <br>
+                            </small>
+
+                            <center><img src="../src/jacksimg/elform.png" width="350px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <p>
+                                to get the Euler-Lagrange equations and solutions:
+                            </p>
+                            
+                            <small>
+                                <br>
+                            </small>
+                            
+                            <center><img src="../src/jacksimg/eleqs.png" width="400px" height="auto"></center>
+                            
+                            <br>
+
+                            <p>
+                                <code>System constraints:</code><br>
+                                The constraints of this system are that the jack masses cannot leave the box, and will instead experience elastic impact with the walls (they will bounce). The external forces affect the y-coordinate of the box to keep it from falling straight off of the plot. To be completely honest, I wanted it to be [42 x gravity] for personal reasons, but that made the impacts too close together and freaked the system out. I settled for a close 41.
+                            </p>
+                            <p>
+                                <code>External forces:</code><br>
+                                The external force is written as: <code><code>f = sym.Matrix([0, 41*g, 0, 0, 0, 0])</code></code>
+                            </p>
+                            <p>
+                                <code>Impact update laws:</code><br>
+                                The impact updates for momentum and energy are calculated with the following equations:
+                                <!-- <center><img src="../src/jacksimg/updoots.png" width="350px" height="auto"></center> -->
+                            </p>
+
+                            <small>
+                                <br>
+                            </small>
+
+                            <center><img src="../src/jacksimg/updoots.png" width="350px" height="auto"></center>
+                            
+                            <hr>
+
+                            <h3>Results:</h3>
+                            <p>
+                                In the simulation, the box spins counter-clockwise and the jack simply falls (as defined in s0).
+                                When the jack impacts the box, they both begin to fall since the jack exerts a force on the box.
+                                The simulation ends with the jack and box barely remaining within the initial world frame.
+                                This (hopefully) is correct since the jack is set to fall (but is much lighter than that of the box), but it still exerts enough force on the box to knock it downward.<br>
+                                <small style="color: white;">As you can tell, I've taken a whole semester-long course in pedagogy and am a trained professional at explaining things (but only to people who think exactly the way I do).<br></small>
+                                <!-- <center><img src="../src/jacksimg/trajic.png" width="350px" height="auto"></center> -->
+                            </p>
+
+                            <br>
+
+                            <center><img src="../src/jacksimg/trajic.png" width="450px" height="auto"></center>
+
+                            <br>
+
+                            <hr>
+                            
+                            <h3>Acknowledgements:</h3>
+                            <p>
+                                Huge thank you to the teaching staff, my bffs, Professor T. Murphey (there's an e in there!), soon-to-be Professor K. Fitzsimons, C. Porter, and MC. Sun :)<br>
+                                Special thanks also to all the people brave enough to ask questions during office hours and my coding friends who taught me to organize my thoughts.
+                            </p>
+                        </div>
+                         
+                        
+        
+                        
+                    </div>
+                    
+                </div>
+                <!-- <div id="page-footer" style="margin: 0px; "> -->
+                    <div id="page-footer" style="margin-left: 20%; width: 80%;">
+                        <div class="footz-img">
+                            <!-- img -->
+                            <img src="../src/contact_transp.png" width="auto" height="200px">
+                        </div>
+                        <div class="footz-info">
+                            <!-- info -->
+                                <a href="https://www.youtube.com/channel/UCZkRKwl5dwA0-_EWymjMdJQ" class="youtube" alt="youtube icon"><img src="../src/icon_yt_x.svg" width="35px" height="35px"></a>
+                                <a href="https://www.instagram.com/nicolpickl/" class="instagram" alt="instagram icon"><img src="../src/icon_ig_x.svg" width="35px" height="35px"></a>
+                                <a href="https://www.linkedin.com/in/nicole-baptist-105a43175?trk=public_profile_samename-profile" class="linkedin" alt="linkedin icon"><img src="../src/icon_in_x.svg" width="35px" height="35px"></a>
+                                <a href="https://github.com/nbaptist16" class="github" alt="github icon"><img src="../src/icon_gh_x.svg" width="35px" height="35px"></a>
+        
+                                <p style="color: black;">© 2021 by yours truly.</p>
+                                <small style="color: black;">Built from scratch with ♡ via BaptistBot.</small>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </body>
+
+<!-- add filters down here so they don't make a mess of the page layout (i think) -->
+<!-- https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/ -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="documentz">
+        <!-- <filter id="id-of-your-filter" x="-100%" y="-100%" height="300%" width="300%"> -->
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.29 0   0   0   0
+                        0   1.00  0   0   0
+                        0   0   0.09  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="youtubez">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="1.00 0   0   0   0
+                        0   0.19  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="instagramz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="1.00 0   0   0   0
+                        0   0.80  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/>
+      <!-- <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.96 0   0   0   0
+                        0   1.00  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/> -->
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="linkedinz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.13 0   0   0   0
+                        0   0.55  0   0   0
+                        0   0   1.00  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="githubz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.67 0   0   0   0
+                        0   0.13  0   0   0
+                        0   0   1.00  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+    
+</html>

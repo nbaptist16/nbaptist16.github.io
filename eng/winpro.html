@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eng | NB</title>
+        
+        <!--style stuff-->
+    <link href="../freshstyles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/favicon.png">
+    
+    <meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Lato fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">        
+
+    <!-- google fonts! -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- source sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">  -->
+
+    <!-- roboto mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div class="navz">
+                <div class="container">
+                    <img src="../src/doghaus.png" alt="home button" style="margin-left: 15px; margin-right: 20px" class="navimg" id="navimg">
+                    <div class="overlay" style="margin-left: 15px;">
+                        <a href="../index.html" style="padding-left: 15px; padding-top: 100px;"><img style="padding-left: 15px;" class="navicon"></a>
+                    </div>
+                </div>
+                <!-- <img src="../src/copee-a2z-1_xsmall_highlight.png" alt="logo" style="opacity: 1; margin-right: 200px;"> -->
+                <h1 style="font-family: Roboto Mono; font-weight: 500; margin: auto;">Nicole Baptist</h1>
+    
+                <div class="navflex-links">
+                    <a href="../index.html" onclick="press()" class="buttontxt">HOME</a>
+                    <a href="../about.html" onclick="press()" class="buttontxt">ABOUT</a>
+                    <a href="../art.html" onclick="press()" class="buttontxt">ART</a>
+                    <a href="index.html" onclick="press()" class="buttontxt">(Z)ENGINEERING</a>
+                    <a href="../contact.html" onclick="press()" class="buttontxt">CONTACT</a>
+                </div>
+            </div>
+    
+            <!-- main body -->
+            <div id = "page-body">                
+                <div style="display: flex; flex-direction: row;">
+                    <div class="sidenav">
+                        <iframe width="95%" height="auto" style="margin: 5px auto;" src="https://www.youtube.com/embed/3XcpcDBDF-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                        <div>
+                            <h2 style="text-align: center;">Skills Used</h2>
+
+                            <div id="feat" style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;">
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Python</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">QMK</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Mill</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Laser Cutting</p>
+                                <!-- <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Patience</p> -->
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <h2 style="text-align: center;">Additional Info</h2>
+                            <small><br></small>
+                            <div style="display: flex; flex-direction: row; justify-content: center;">
+                                <a href="https://www.youtube.com/watch?v=3XcpcDBDF-4&ab_channel=NicoleBaptist"><img class="youtube" alt="youtube icon" src="../src/icon_yt_x.svg" width="35px" height="35px"></a>
+                                <a href="https://github.com/nbaptist16/yampad2"><img class="github" alt="github icon" src="../src/icon_gh_x.svg" width="35px" height="35px"></a>
+                                <a href="https://github.com/nbaptist16/yampad2/blob/master/README.md"><img class="docz" alt="docz icon" src="../src/icon_doc_g2.svg" width="35px" height="35px"></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="main">
+                        <div style="margin: 30px;">
+                            <!-- content here -->
+                            <h1 style="text-align: center;">YamPAD v2</h1>
+                            <p style="text-align: center;"><code>YEAH</code>, it's an <code>AUTOMATED </code> <code> MECHANICAL</code> num<code>PAD</code></p>
+                            <p style="text-align: center;">A fun build referencing <a href="https://hackaday.io/project/163491-yampad-feature-packed-open-source-macropad" target="_blank" style="margin: auto;">this</a>!</p>
+                            <p><br></p>
+                            <p align="center">
+                                <img src="../src/winproimg/20210316_162014.jpg" width="400px" height="auto">
+                            </p>
+                            <h3>Overview:</h3>
+                            <p>
+                                Inspired by the technology of player pianos, this self-typing keyboard is able to receive and recognize a string of commands, such as a password via loaded text file, and enter it on its own via a series of controlled servo motors while still remaining fully functional as a standard keyboard. The purpose of this project is to help people, such as senior citizens and people who did not grow up typing in general, who are less comfortable typing and have trouble memorizing various passwords to more easily access their virtual accounts while also addressing other common medical conditions such as arthritis and carpal tunnel syndrome.
+                                <br>
+                                <br>
+                                The system is built on Mattia Dal Ben's famous YamPAD with added automated control and additional documentation on troubleshooting for those who are new to QMK Firmware.
+                            </p>     
+
+                            <hr>
+
+                            <h3>Technical Objectives:</h3>
+                            <p>
+                                As a 10-week-long independent project, the YamPAD++ first needed some direction. The original proposed learning objectives of this project were:<br>
+                                
+                                <br>
+
+                                &emsp; * Computer vision<br>
+                                &emsp; * Dot matrix computation and design<br>
+                                &emsp; * Mechatronics<br>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                These hopes and dreams for all that it would become were divided into three categories of goals.<br>
+                                
+                                <br>
+                                <code>Fallback goals:</code><br>
+                                &emsp; * Fully automatable custom mechanical keypad/keyboard<br>
+                                &emsp;&emsp;(keys can be “self-pressed”)<br>
+                                &emsp; * Computer vision solution recognizes numerical values<br>
+                                
+                                <br>
+                                <code>Core goals:</code><br>
+                                &emsp; * Computer vision solution recognizes alphanumeric values<br>
+                                &emsp; * Keys signal when pressed (light up)<br>
+                                
+                                <br>
+                                <code>Reach goals:</code><br>
+                                &emsp; * Computer vision solution increased recognition accuracy (80%?)<br>
+                                &emsp; * Computer vision solution recognizes certain special characters<br>
+                                &emsp; * Keyboard output registers on computer<br>
+                                &emsp; * Other forms of input accepted (voice, text file, etc?)
+                            </p>
+
+                            <hr>
+                            
+                            <h3>Hardware and Construction:</h3>
+                            <p>
+                                This mechatronics project requires a variety of parts that can be organized into subsystems of the overarching project.<br>
+                                
+                                <br>
+                                <code>Case:</code><br>
+                                &emsp; * 12" x 12" x 3/8" Acrylic Sheet<br>
+                                &emsp; * 12" x 12" x 1/4" Acrylic Sheet<br>
+                                &emsp; * 12" x 12" x 1/8" Acrylic Sheet<br>
+                                &emsp; * 6-32 x 2" Phillips Drive Flat Head Machine Screws (5x)<br>
+                                &emsp; * 6-32 Machine Screw Nuts (x15)<br>
+                                &emsp; * M2-0.4 x 12 mm DIN 912 Hex Drive Class 12.9 Socket Head Screws (x10)<br>
+                                &emsp; * M2-0.4 DIN 934 Class 8 Hex Nuts (x 10)<br>
+                                &emsp; * Binder clips, small (x3)<br>
+                                &emsp; * Mounting tape<br>
+                                
+                                <br>
+                                <code>Electronics:</code><br>
+                                &emsp; * TowerPro RC 5V Servo Motor (x5)<br>
+                                &emsp; * Pro Micro - 5V/16MHz<br>
+                                &emsp; * 0.91" OLED Module 128X32 LCD LED Display Module IIC<br>
+                                &emsp; &emsp; * XM electronic<br>
+                                &emsp; &emsp; * please see link in README.md for details<br>
+                                &emsp; * YamPAD PCB<br>
+                                &emsp; * 1N4148W-13-F Diodes, SMD (18pcs)<br>
+                                &emsp; * Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V .1uF X5R 0805 10% (9pc)<br>
+                                &emsp; * AA Battery Holder<br>
+                                &emsp; * MX Kailh Sockets (18pcs)<br>
+                                &emsp; * Mini Maestro 12-Channel USB Servo Controller<br>
+                                &emsp; * Assorted jumper wires<br>
+                               
+                                <br>
+                                <code>Key Switches:</code><br>
+                                &emsp; * Cherry MX Red Linear Platemounted Keyswitch (10 pack) (x2)<br>
+                                &emsp; * KIT21 (purple) DSA Blank Keycaps 1U (10pcs)<br>
+                                &emsp; * KIT17 (white) DSA Blank Keycaps 1U (10pcs)<br>
+
+                                <br>
+                                <small>More servos can be added for the control of other keys, but this project focused on numerical keys for simplicity</small><br>
+                                <small>Note: the links to purchasing can be found in the <a href="https://github.com/nbaptist16/yampad2/blob/master/README.md" target="_blank" style="margin: auto;">README.md</a></small>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                The construction of this project utilizes <code style="font-size: small;">laser cutting</code>, <code style="font-size: small;">milling</code>, and a little bit of work on the <code style="font-size: small;">band saw</code>.<br>
+                                SVG files were made using the dimensions from mattdibi's original case <a href="https://github.com/mattdibi/yampad/tree/master/case" target="_blank" style="margin: auto;">models</a>. The laser cut design requires less material and is more efficient to construct due to the greatly increased depth of the project to account for the servos below. It also allows for the user to adjust the servo to key switch connections easily (and it's pretty cool to see the whole thing in action). The design files can be found <a href="https://github.com/nbaptist16/yampad2/tree/master/materials" target="_blank" style="margin: auto;">here</a>.<br>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                Another major design decision was to use servo motors rather than the original idea to use solenoids. This is because, while servos take up more room, a servo motor has more precise control and can control more than one key on its own (in this case, each servo controls 2 keys). 
+                            </p>
+                <!--  -->
+                            <hr>
+
+                            <h3>Discussion, Challenges, and Solutions:</h3>
+                            <p>
+                                As with any mechatronics project, there were a good deal of challenges along the way. However the two most significant were the QMK Firmware learning curve, the mechatronics troubleshooting of real-life systems, and the unreliability of the strings.<br><br>
+                                
+                                <code>Firmware challenge:</code><br>
+                                The firmware challenge was mostly due to my inexperience with custom keyboards in the past. Although the tutorial online (as mentioned in the README) was thorough, the source did not specifically support the yampad and adjustments had to be made accordingly.<br>
+                                However, troubleshooting what was helpful in learning more about QMK_Firmware, as it required reading through files and documentation, which isn't often written simply for new learners. Unsurprisingly, the biggest help came from <a href="https://github.com/mattdibi/yampad/issues/9" target="_blank" style="margin:auto;">a thread</a> on the original yampad repository.<br>
+                                
+                                <br>
+                                <code>Troubleshooting challenge:</code>
+                                Much like the firmware challenge, a amount of time was spent attempting to debug the board, as only certain keys would respond in the beginning. This resulted in less obvious mistakes that required W. Strong's assistance to fix.<br>
+                                
+                                <br>
+                                This being the first time I tried my hand at SMD soldering (and without tweezers) resulted in some messy connections. If certain keys don't work, a list of possible solutions are as follows:<br>
+                                &emsp; 1. Check each connection under a microscope and/or with a multimeter. The diodes in particular were prone to small errors.<br>
+                                &emsp; 2. Check each diode to make sure they are facing the correct way (as current only flows in one direction). The letter and number on the diode should be facing upwards, towards the connected socket:<br>
+                            </p>
+                            
+                            <br>
+
+                            <p align="center">
+                                <img src="../src/winproimg/162051061_259012542223269_6042337713113042721_n.jpg" width="400px" height="auto">
+                            </p>
+
+                            <br>
+
+                            <p>
+                                &emsp; 3. If after testing each key, it is determined that all should be working, but no numbers are being output, this may be due to numlock being off. For LINUX users, this can be solved by installing <code style="font-size: small;">numlockx</code>. You can then toggle numlock on with the command, <code style="font-size: small;">numlockx on</code>.<br>
+                                <br>
+                                <code>Hardware challenge:</code><br>
+                                The strings were a way to save some vertical space in the keyboard, as it is already sitting at over 2" high, and to simplify the control of a group of actuators. Fortunately, this second issue became irrelevant with the introduction of the Pololu Maestro to the makeup. Unfortunately, the strings still posed a slight problem, as they tended to shift around and were thin enough to snap on occasion.<br>
+                                
+                                <br>
+                                While tying the strings to the servos was the most secure, it was difficult to measure out and control precise distances when tying knots in thin threads. Adhesives such as tape and hot glue were also considered, but were eventually decided against for various reasons such as its unreliability (tape) and the permanence of the hot glue. Instead, it was decided to use binder clips to hold the strings in place due to their strong clamping force (which fits nicely on the servo mount plate) and their inconspicuous appearance when the tabs are folded down onto the servo plate. They also allowed the user to quickly and easily adjust the strings' positioning, which also made it easier to troubleshoot.<br>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                <br>
+                                <code>Future work</code>:<br>
+                                While this was meant to be a shorter-term experimental project, there is much that I'd like to improve in future iterations.<br>
+                                
+                                <br>
+
+                                <code>Software update</code>:<br>
+                                <p>
+                                    ADD CAPABILITIES
+                                </p>
+
+                                <br>
+
+                                <code>Hardware (tension control) update</code>:<br>
+                                <p>
+                                    RATCHETING?
+                                </p>
+
+                                <br>
+
+                                <code>Ergonomic design update</code>:<br>
+                                <p>
+                                    The servos standing upright beneath the keyboard take up a decent vertical space, as each tower servo is approximately XXX" tall. This can be modified MAKE KEYBOARD LOWER OR ADD HAND REST SO USER COMFORTABLE
+                                </p>
+                            </p>
+                            <!-- <h3>Code:</h3>
+                            <p>
+                                n
+                            </p>
+                            <hr>
+                            <h3>Calculations:</h3>
+                            <p>
+                                M
+                            </p> -->
+
+                            <hr>
+
+                            <h3>Results:</h3>
+                            <p>
+                                Although the resulting keyboard jumped around a bit in terms of goal completion, it is able to read an input "password" and actuate the corresponding keys. It also works as a functioning independent (manual) numpad when the servos are stopped.
+                            </p>
+
+                            <br>
+
+                            <p>
+                                <center><img src="../src/winproimg/20210316_161926.jpg" width="400px" height="auto"></center><br>
+                            </p>
+
+                            <br>
+
+                            <hr>
+                            <h3>Acknowledgements:</h3>
+                            <p>
+                                A special shoutout to W Strong for all your help troubleshooting, your professional expertise, and for sharing your awesome stories with me (and for letting me use your fancy equipment!)<br>
+                                Thank you also to M Elwin for your constant guidance and for helping me to decide on what I wanted to focus on this quarter<br>
+                                Finally, thank you to M Dal Ben for sharing your work with the world and for your help flashing the boards
+                            </p>
+                        </div>
+                         
+                        
+        
+                        
+                    </div>
+                    
+                </div>
+                <!-- <div id="page-footer" style="margin: 0px; "> -->
+                    <div id="page-footer" style="margin-left: 20%; width: 80%;">
+                        <div class="footz-img">
+                            <!-- img -->
+                            <img src="../src/contact_transp.png" width="auto" height="200px">
+                        </div>
+                        <div class="footz-info">
+                            <!-- info -->
+                                <a href="https://www.youtube.com/channel/UCZkRKwl5dwA0-_EWymjMdJQ" class="youtube" alt="youtube icon"><img src="../src/icon_yt_x.svg" width="35px" height="35px"></a>
+                                <a href="https://www.instagram.com/nicolpickl/" class="instagram" alt="instagram icon"><img src="../src/icon_ig_x.svg" width="35px" height="35px"></a>
+                                <a href="https://www.linkedin.com/in/nicole-baptist-105a43175?trk=public_profile_samename-profile" class="linkedin" alt="linkedin icon"><img src="../src/icon_in_x.svg" width="35px" height="35px"></a>
+                                <a href="https://github.com/nbaptist16" class="github" alt="github icon"><img src="../src/icon_gh_x.svg" width="35px" height="35px"></a>
+        
+                                <p style="color: black;">© 2021 by yours truly.</p>
+                                <small style="color: black;">Built from scratch with ♡ via BaptistBot.</small>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </body>
+
+<!-- add filters down here so they don't make a mess of the page layout (i think) -->
+<!-- https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/ -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="documentz">
+        <!-- <filter id="id-of-your-filter" x="-100%" y="-100%" height="300%" width="300%"> -->
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.29 0   0   0   0
+                        0   1.00  0   0   0
+                        0   0   0.09  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="youtubez">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="1.00 0   0   0   0
+                        0   0.19  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="instagramz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="1.00 0   0   0   0
+                        0   0.80  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/>
+      <!-- <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.96 0   0   0   0
+                        0   1.00  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/> -->
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="linkedinz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.13 0   0   0   0
+                        0   0.55  0   0   0
+                        0   0   1.00  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="githubz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.67 0   0   0   0
+                        0   0.13  0   0   0
+                        0   0   1.00  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+    
+</html>

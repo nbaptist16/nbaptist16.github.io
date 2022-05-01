@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eng | NB</title>
+        
+        <!--style stuff-->
+    <link href="../freshstyles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/favicon.png">
+    
+    <meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Lato fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">        
+
+    <!-- google fonts! -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- source sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">  -->
+
+    <!-- roboto mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div class="navz">
+                <div class="container">
+                    <img src="../src/doghaus.png" alt="home button" style="margin-left: 15px; margin-right: 20px" class="navimg" id="navimg">
+                    <div class="overlay" style="margin-left: 15px;">
+                        <a href="../index.html" style="padding-left: 15px; padding-top: 100px;"><img style="padding-left: 15px;" class="navicon"></a>
+                    </div>
+                </div>
+                <!-- <img src="../src/copee-a2z-1_xsmall_highlight.png" alt="logo" style="opacity: 1; margin-right: 200px;"> -->
+                <h1 style="font-family: Roboto Mono; font-weight: 500; margin: auto;">Nicole Baptist</h1>
+    
+                <div class="navflex-links">
+                    <a href="../index.html" onclick="press()" class="buttontxt">HOME</a>
+                    <a href="../about.html" onclick="press()" class="buttontxt">ABOUT</a>
+                    <a href="../art.html" onclick="press()" class="buttontxt">ART</a>
+                    <a href="index.html" onclick="press()" class="buttontxt">(Z)ENGINEERING</a>
+                    <a href="../contact.html" onclick="press()" class="buttontxt">CONTACT</a>
+                </div>
+            </div>
+    
+            <!-- main body -->
+            <div id = "page-body">
+                <div style="display: flex; flex-direction: row;">
+                    <div class="sidenav">
+                        <iframe width="95%" height="auto" style="margin: 5px auto;" src="https://www.youtube.com/embed/z6zkJ1z4xeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="95%" height="auto" style="margin: 5px auto;" src="https://www.youtube.com/embed/0KmOi3LsH_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                        <div>
+                            <h2 style="text-align: center;">Skills Used</h2>
+
+                            <div id="feat" style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;">
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">ROS</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">Python</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">C++</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">MoveIt</p>
+                                <p class="feet-keys-prp" style="padding: 5px; text-align: center; font-size: larger;">SLAM</p>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <h2 style="text-align: center;">Additional Info</h2>
+                            <small><br></small>
+                            <div style="display: flex; flex-direction: row; justify-content: center;">
+                                <a href="https://www.youtube.com/embed/z6zkJ1z4xeE"><img class="youtube" alt="youtube icon" src="../src/icon_yt_x.svg" width="35px" height="35px"></a>
+                                <a href="https://github.com/nbaptist16/#Blocked"><img class="github" alt="github icon" src="../src/icon_gh_x.svg" width="35px" height="35px"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="main">
+                    <!-- <div> -->
+                        <div style="margin: 30px;">
+                            <!-- content here -->
+                            <h1 style="text-align: center;">#Blocked: 3D Scanning Meets Robotic Manipulation</h1>
+                            <p style="text-align: center;">A Sawyer, a Turtlebot3, and a RealSense camera walk into a bar...</p>
+                            <p><br></p>
+                            <p align="center">
+                                <center>
+                                    <img src="../src/projectthumbs/blocked.png" height="400px" width="auto">
+                                </center>
+                            </p>
+
+                            <br>
+
+                            <!--  -->
+                            
+                            <h3>Overview:</h3>
+                            <p>For our final project in ME495, our team decided we wanted to take a 3D scan of an object and import it into Minecraft. Our solution was to use the Turtlebot3 as a turntable while the RealSense camera (mounted onto the Sawyer arm) would move around the Turtlebot3 and save the necessary views as pointclouds.
+                                The captured pointclouds would then be fused together to make a multi-faced (5 by default) pointcloud object which would be saved as a pointcloud data file (pcd), converted to a ply file, and then imported into Minecraft.
+                                <br>
+                                <br>
+                                The result is an automated multi-robot system that processes, fuses, and crops saved pointclouds and can be used for virtual 3D reconstruction in industries such as packaging and shipping.
+                            </p>
+
+                            <br>
+
+                            <center><img src="../src/blockedimg/ezgif-7-4bdb8e39dff2.gif" width="400px" height="auto"></center>
+                            <center><small>vc: TY Li</small></center>
+                            <hr>
+                            <h3>Hardware:</h3>
+                            <p>
+                                This project required the following main components:<br>
+                                * <code>Turtlebot3</code><br>
+                                * <code>Sawyer</code><br>
+                                * <code>RealSense Camera</code><br>
+                                <br>
+                                Networking required the two robots and the computer to all communicate on the same <code>ROS_MASTER_URI</code> via a router. This synchronized the time on each component which allowed them to work together. 
+                            </p>
+                            <small>Note: the camera (held by the Sawyer) was connected to the computer via cable</small>
+                            <hr>
+                            <h3>Software:</h3>
+                            <p>The code utilizes <b>ROS</b> in <b>Python</b> and <b>C++</b>, and it can be split into 3 packages: arm_motion, camera_motion, and camera_reconstruct.</p>
+                            * <code>arm_motion:</code><p>controls the motion of the arm and the Turtlebot3 to properly position the camera for scanning</p>
+                            * <code>camera_motion:</code><p>processes, aligns, and stabilizes images to be published to the <code>camera_reconstruct</code> nodes</p>
+                            * <code>camera_reconstruct:</code><p>fuses the received pointclouds and saves the final product as a pcd file</p>
+                            
+                            <br>
+
+                            <center><img src="../src/blockedimg/run_start_dg.png" width="600px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <p>
+                                As seen in the diagram, the code can be run by launching the <code>arm.launch</code> file, which includes other necessary files across the three packages.
+                            </p>
+
+                            <hr>
+                            
+                            <center><img src="../src/blockedimg/blocked.png" width="350px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <p>
+                                The arm_motion directory contains the turntable and scanner_arm nodes, which control the turtlebot and sawyer arm, respectively. The default positions allow for a total of 5 individual pointclouds to be captured: the front, back, sides, and top of the object.
+                            </p>
+                            <p>
+                                This is done by rotating the object on the center of the turtlebot a specified number of times per call while the camera face is perpendicular to the desired face and approximately 50 or so cm away. After the turtle rotates a third time, the sawyer arm moves the camera so that it is facing the top of the object for the final individual pointcloud.
+                            </p>
+
+                            <br>
+
+                            <center><img src="../src/blockedimg/turntable_dg.png" width="350px" height="auto"><img src="../src/blockedimg/scanner_arm_dg.png" width="350px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <!-- <center><img src="../src/scanner_arm_dg.png"></center> -->
+                            <p>
+                                The camera_motion directory aligns the center of the depth camera with the scanning object by publishing the depth value of the center pixel via find_depth node. It also stabilizes the depth values with the camera_motion python library to ensure the quality of the pointclouds are up to par.
+                            </p>
+                            <p>
+                                Finally, the previously mentioned nodes call nodes in the camera_reconstruct directory, generate_pc and fuse_pc. These two nodes receive the continuous stream of pointclouds from the realsense camera and combine each view one-by-one as the pointclouds are transformed to move with the turtlebot, producing a single pointcloud data (or pcd) file per run. This way, the user can choose the views that they want saved (by calling the save_pc service) and will not have to filter through a folder full of pointclouds.
+                            </p>
+
+                            <br>
+
+                            <center><img src="../src/blockedimg/camera_reconstruct_dg.png" width="600px" height="auto"></center>
+                            <small>
+                                Note: also included are two tests for the pointcloud fusion pipeline and the smoothing functions, <code>arm_motion/test/turntable.test</code> and <code>camera_motion/test/smoothing_test.py</code>
+                            </small>
+
+                            <br>
+
+                            <p>
+                                <br>
+                                Although the results of the above method resulted in a multi-faced pointcloud, the images did not line up as intended. Since the issue was in the turtlebot's movement, this issue was addressed with SLAM.
+                            </p>
+
+                            <br>
+
+                            <center><img src="../src/blockedimg/slam_dg.png" width="600px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <p>
+                                In the <code>top</code> image below of the windex bottle, one can see the resulting pointcloud without SLAM. On the <code>bottom</code> is the pointcloud produced with SLAM of a clorox container. From these two images, it is clear that the addition of SLAM to the operation benefitted the overall accuracy of the model.
+                            </p>
+
+                            <br>
+
+                            <center><img src="../src/blockedimg/windexx.gif" width="350px" height="auto"> <img src="../src/blockedimg/cloroxx.gif" width="350px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <hr>
+                            <h3>Future work:</h3>
+                            <p>
+                                Although our team was able to successfully produce a multi-faced pointcloud of an acceptable level of accuracy, the default number of faces was limited to five for simplicity.
+                                Further development could see pointclouds being saved ~continuously over time and use a iterative closest point algorithm to consolidate the collection, as seen in an example below.
+                            </p>
+
+                            <br>
+
+                            <center><img src="../src/blockedimg/VL6Suz.gif" width="200px" height="auto"></center>
+                            
+                            <br>
+                            
+                            <hr>
+                            
+                            <!-- <center><p style="color: yellow; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><br><br><br>Meet the team!</p></center> -->
+                            <h3 style="text-align: center;">Meet the team!</h3>
+                            <center>
+                                <p>
+                                    <a href="blocked.html" target="_blank" style="text-decoration: none;">
+                                        A Kumar
+                                    </a>
+                                    &emsp;
+                                    <a href="blocked.html" target="_blank" style="text-decoration: none;">
+                                        BW Feng
+                                    </a>
+                                    &emsp;
+                                    <a href="blocked.html" target="_blank" style="text-decoration: none;">
+                                        TY Li
+                                    </a>
+                                    &emsp;
+                                    <a href="blocked.html" target="_blank" style="text-decoration: none;">
+                                        YC Loke
+                                    </a>
+                                </p>
+                            </center>
+                        </div>
+                        
+        
+                        
+                    </div>
+                    
+                </div>
+                <!-- <div id="page-footer" style="margin: 0px; "> -->
+                    <div id="page-footer" style="margin-left: 20%; width: 80%;">
+                        <div class="footz-img">
+                            <!-- img -->
+                            <img src="../src/contact_transp.png" width="auto" height="200px">
+                        </div>
+                        <div class="footz-info">
+                            <!-- info -->
+                                <a href="https://www.youtube.com/channel/UCZkRKwl5dwA0-_EWymjMdJQ" class="youtube" alt="youtube icon"><img src="../src/icon_yt_x.svg" width="35px" height="35px"></a>
+                                <a href="https://www.instagram.com/nicolpickl/" class="instagram" alt="instagram icon"><img src="../src/icon_ig_x.svg" width="35px" height="35px"></a>
+                                <a href="https://www.linkedin.com/in/nicole-baptist-105a43175?trk=public_profile_samename-profile" class="linkedin" alt="linkedin icon"><img src="../src/icon_in_x.svg" width="35px" height="35px"></a>
+                                <a href="https://github.com/nbaptist16" class="github" alt="github icon"><img src="../src/icon_gh_x.svg" width="35px" height="35px"></a>
+        
+                                <p style="color: black;">© 2021 by yours truly.</p>
+                                <small style="color: black;">Built from scratch with ♡ via BaptistBot.</small>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </body>
+
+<!-- add filters down here so they don't make a mess of the page layout (i think) -->
+<!-- https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/ -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="documentz">
+        <!-- <filter id="id-of-your-filter" x="-100%" y="-100%" height="300%" width="300%"> -->
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.29 0   0   0   0
+                        0   1.00  0   0   0
+                        0   0   0.09  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="youtubez">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="1.00 0   0   0   0
+                        0   0.19  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="instagramz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="1.00 0   0   0   0
+                        0   0.80  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/>
+      <!-- <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.96 0   0   0   0
+                        0   1.00  0   0   0
+                        0   0   0.13  0   0
+                        0   0   0   1   0 "/> -->
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="linkedinz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.13 0   0   0   0
+                        0   0.55  0   0   0
+                        0   0   1.00  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="githubz">
+        <feColorMatrix
+            color-interpolation-filters="sRGB"
+            type="matrix"
+            values="0.67 0   0   0   0
+                        0   0.13  0   0   0
+                        0   0   1.00  0   0
+                        0   0   0   1   0 "/>
+      </filter>
+      ...
+    </defs>
+</svg>
+    
+</html>

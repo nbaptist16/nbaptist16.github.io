@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NCKMLB</title>
+
+    <!--style stuff-->
+    <link href="freshstyles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/favicon.png">
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Lato fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">        
+
+    <!-- google fonts! -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- added for a4! Borrowed from Professor Compton :) -->
+    <!-- P5 Loaded from a CDN -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script> -->
+
+		<!-- Or P5 loaded locally -->
+		<script src="../shared/p5.min.js"></script>
+		
+		
+		<script src="vector.js"></script>
+		<script src="curve.js"></script>
+
+		<!-- Create particle systems here -->
+		<script src="particles-basic.js"></script>
+		<!-- <script src="particles-bugs.js"></script> -->
+		<script src="particles-boids.js"></script>
+		<script src="particles-springs.js"></script>
+
+        <!-- added nckmlb -->
+        <script src="particles-bugs.js"></script>
+
+		<script src="app.js"></script>
+</head>
+<body>
+    <div class="navz">
+        <div class="container">
+            <img src="../src/doghaus.png" alt="home button" style="margin-left: 15px; margin-right: 20px" class="navimg">
+            <!-- <a href="../../../roster.html" style="margin-left: 15px; margin-right: 20px"><img src="src/doghaus.png" alt="home button" class="navimg"></a> -->
+            <div class="overlay" style="margin-left: 15px;">
+                <!-- <a href="#" class="icon" title="home button hover"> -->
+                    <!-- <a href="#" class="navicon" title="home button hover"></a> -->
+                <!-- </a> -->
+                <!-- <a href="../../../roster.html" style="padding-left: 15px; padding-top: 100px;"><img style="padding-left: 15px;" class="navicon"></a> -->
+                <a href="../../index.html" style="padding-left: 15px; padding-top: 100px;"><img style="padding-left: 15px;" class="navicon"></a>
+                <!-- <a onclick="press()" href="../../../roster.html"><a onclick="press()" href="../../../roster.html" style="padding-left: 15px;" class="navicon"></a></a> -->
+            </div>
+        </div>
+        <!-- <img src="a1/src/doghaus.png" alt="home button" width="auto" height="100px" style="margin-left: 15px; margin-right: 15 px;" class="navflex-icon"> -->
+        <h1 style="padding-left: 20px; padding-right: 20px; font-family:Shadows Into Light;"><b>Nicole<small><br></small>&emsp;Baptist</b></h1>
+
+        <div class="navflex-links">
+            <a href="../a1/index.html" onclick="press()" class="buttontxt">Hi Web!</a>
+            <a href="../a2/index.html" onclick="press()" class="buttontxt">a GIF!</a>
+            <a href="../a3/index.html" onclick="press()" class="buttontxt">Draw!</a>
+            <a href="../a4/index.html" onclick="press()" class="buttontxt">Swarms!</a>
+            <a href="../a5/index.html" onclick="press()" class="buttontxt">Oi 'Puter!</a>
+            <a href="../a6/index.html" onclick="press()" class="buttontxt">Emojis!</a>
+            <a href="../a7/index.html" onclick="press()" class="buttontxt">Floatilla</a>
+            <a href="../a8/index.html" onclick="press()" class="buttontxt">Big Vecs</a>
+            <a href="../a9/index.html" onclick="press()" class="buttontxt">Costumes!</a>
+        </div>
+    </div>
+
+    <!-- main body -->
+    <div style="padding-top: 105px;">
+        <div style="height: 20px; position: relative; overflow: hidden; width:100%;">
+            <small class="sidescroll">warning! messy coad ahead!</small>
+        </div>
+        <div id="main-column">
+            <div>
+                <h1>Friends + Foes</h1>
+                <p>a particles simulation</p>
+            </div>
+			<div id="main">
+				<!-- Processing gets installed here -->
+			</div>
+            <small>(no animals were harmed in the making of this assignment)</small>
+
+			<div class="controls">
+				<p style="color: rgb(186, 173, 241); font-weight: bold;"><i>adjust values:</i></p>
+				<div id="sliders">
+					
+				</div>
+                <p style="color: rgb(186, 173, 241); font-weight: bold;"><i>debugging tools:</i></p>
+				<div id="toggles">
+					
+				</div>
+			</div>
+		</div>
+
+		<div id="heatmap">
+			
+		</div>
+        
+        <!-- footer -->
+        <div class="footz">
+            <center>
+                <a href="https://www.linkedin.com"><img src="../src/inc.png" width="28px" height="28px"></a>
+                <a href="https://www.youtube.com"><img src="../src/ytc.png" width="28px" height="28px"></a>
+                <a href="https://www.instagram.com"><img src="../src/igc.png" width="28px" height="28px"></a>
+                <a href="https://github.com"><img src="../src/ghc.png" width="28px" height="28px"></a>
+            </center>
+            <center>
+                <p style="color: black;">© 2021 by yours truly.</p>
+                <p style="color: black;">Brought to you fresh via BaptistBot.</p>
+            </center>
+        </div>
+
+        <div style="position: fixed; bottom: 5px; right: 5px; width: 300px; border: 5px solid rgb(216, 138, 255); border-radius: 5px; background-color: rgb(249, 239, 255); padding: 5px;">
+            <p>
+                assignment: <b>Swarm (A4)</b>
+            </p>
+            <p>
+                documentation: <a href="README.pdf" target="_blank" style="text-decoration: none; font-weight: bold;">author's notes</a>
+            </p>
+            <center>
+                <small>
+                    to return to my main portfolio, please click on the dog house in the upper left-hand corner
+                </small>
+            </center>
+        </div>
+    </div>
+    
+</body>
+</html>

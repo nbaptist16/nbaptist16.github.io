@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NCKMLB</title>
+
+    <!--style stuff-->
+    <link href="freshstyles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/favicon.png">
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Lato fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">        
+
+    <!-- google fonts! -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- added for a6! From Professor Compton!-->
+    <script src="../shared/vue.js"></script>
+	<!-- <script src="../../../shared/simplex-noise.js"></script> -->
+
+
+	<script src="../shared/p5.min.js"></script>
+
+
+
+	<!-- My app's code goes last, 
+		because it needs to refer to things in the previous JS files -->
+
+	<script src="vector.js"></script>
+	<script src="v-sim.js"></script>
+	<script src="sim-sulani.js"></script>
+	<script src="sim-prices.js"></script>
+	<script src="sim-spred.js"></script>
+	<!-- <script src="sim-gameoflife.js"></script>
+	<script src="sim-dust.js"></script> -->
+	<script src="app.js"></script>
+</head>
+<body>
+    <div class="navz">
+        <div class="container">
+            <img src="../src/doghaus.png" alt="home button" style="margin-left: 15px; margin-right: 20px" class="navimg">
+            <!-- <a href="../../../roster.html" style="margin-left: 15px; margin-right: 20px"><img src="src/doghaus.png" alt="home button" class="navimg"></a> -->
+            <div class="overlay" style="margin-left: 15px;">
+                <!-- <a href="#" class="icon" title="home button hover"> -->
+                    <!-- <a href="#" class="navicon" title="home button hover"></a> -->
+                <!-- </a> -->
+                <!-- <a href="../../../roster.html" style="padding-left: 15px; padding-top: 100px;"><img style="padding-left: 15px;" class="navicon"></a> -->
+                <a href="../../index.html" style="padding-left: 15px; padding-top: 100px;"><img style="padding-left: 15px;" class="navicon"></a>
+                <!-- <a onclick="press()" href="../../../roster.html"><a onclick="press()" href="../../../roster.html" style="padding-left: 15px;" class="navicon"></a></a> -->
+            </div>
+        </div>
+        <!-- <img src="a1/src/doghaus.png" alt="home button" width="auto" height="100px" style="margin-left: 15px; margin-right: 15 px;" class="navflex-icon"> -->
+        <h1 style="padding-left: 20px; padding-right: 20px; font-family:Shadows Into Light;"><b>Nicole<small><br></small>&emsp;Baptist</b></h1>
+
+        <div class="navflex-links">
+            <a href="../a1/index.html" onclick="press()" class="buttontxt">Hi Web!</a>
+            <a href="../a2/index.html" onclick="press()" class="buttontxt">a GIF!</a>
+            <a href="../a3/index.html" onclick="press()" class="buttontxt">Draw!</a>
+            <a href="../a4/index.html" onclick="press()" class="buttontxt">Swarms!</a>
+            <a href="../a5/index.html" onclick="press()" class="buttontxt">Oi 'Puter!</a>
+            <a href="../a6/index.html" onclick="press()" class="buttontxt">Emojis!</a>
+            <a href="../a7/index.html" onclick="press()" class="buttontxt">Floatilla</a>
+            <a href="../a8/index.html" onclick="press()" class="buttontxt">Big Vecs</a>
+            <a href="../a9/index.html" onclick="press()" class="buttontxt">Costumes!</a>
+        </div>
+    </div>
+
+    <!-- main body -->
+    <div class=mainbody>
+        <div style="height: 20px; position: relative; overflow: hidden; width:100%;">
+            <small class="sidescroll">warning! messy coad ahead!</small>
+        </div>
+
+        <!-- more for a6! Also mostly from Professor Compton!-->
+        <div id="main-column">
+            <h1>The Un-Lonely Island</h1>
+
+			<img style="margin-left: auto; margin-right: auto; margin-bottom: 20px;" src="../src/20210106_151802.jpg" width="50%" height="auto">
+
+			<div style="width: 70%; padding: 10px; margin: auto; background-color: rgba(255, 255, 255, 0.65); border-radius: 10px;">
+				<p>
+					"The price of paradise" can refer to many things; from strict COVID travel restrictions to some of the highest gas prices in the country, the island life certainly comes with its fair share of terms and conditions.
+				</p>
+				<p>
+					While the living expenses of any remote area are typically less than ideal, Hawai‘i's long-time housing situation has been a struggle state-wide, especially with the additional challenges resulting from coronavirus. With a reliably positive annual change in population and the fourth smallest land mass in the United States, Hawai‘i and its residents face a constant imbalance between demand and supply.
+				</p>
+			</div>
+
+			<p>
+				<center> 🤙 * 🤙 * 🤙 * 🤙 </center>
+			</p>
+
+			<!-- <img style="z-index: 1;" src="oahumask.png" width="auto" height="auto"> -->
+            <div id="app">
+				<!-- <img style="z-index: 1;" src="oahumask.png" width="auto" height="auto"> -->
+				<!-- <img style="z-index: 1;" src="oahumask.png" width="100%" height="100%"> -->
+            </div>
+			<!-- <img id="maask" src="oahumask.png" width="auto" height="auto"> -->
+			<!-- <div class="maask">WORKS!</div> -->
+            <p>
+				<center> 🤙 * 🤙 * 🤙 * 🤙 </center>
+			</p>
+			<div style="width: 70%; padding: 10px; margin: auto; background-color: rgba(255, 255, 255, 0.65); border-radius: 10px;">
+				<p>
+					Although the situation will take years of planning and clever problem-solving to address, <br>as long as we’re all working together, we’re lucky we live Hawai‘i!
+				</p>
+			</div>
+			<img style="margin: 20px auto;" src="20190529_132934.jpg" width="50%" height="auto">
+        </div>
+
+		<div style="width: 70%; padding: 20px; margin: 20px auto; background-color: rgba(251, 219, 255, 0.65); border-radius: 10px;">
+			<p style="overflow: scroll;">
+				Sources!<br><br>
+				
+				<b>Data!</b> (Mostly for that goood data visualization :D)<br>
+				<i>Population</i><br>
+				&nbsp;&nbsp;&nbsp;* https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_historical_population<br>
+				&nbsp;&nbsp;&nbsp;* https://guides.library.manoa.hawaii.edu/c.php?g=105181&p=684171#:~:text=Depopulation%20continued%20until%201876%2C%20when,1980%20and%201%2C108%2C229%20in%201990.<br>
+				&nbsp;&nbsp;&nbsp;* https://www.macrotrends.net/states/hawaii/population<br>
+				<i>Miscellaneous</i><br>
+				&nbsp;&nbsp;&nbsp;* https://datausa.io/profile/geo/hawaii   <!-- Idk about the sources, but they have reaaally nice graphs --><br>
+				&nbsp;&nbsp;&nbsp;* https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area<br>
+				&nbsp;&nbsp;&nbsp;* https://www.eia.gov/tools/faqs/faq.php?id=26&t=10<br>
+				&nbsp;&nbsp;&nbsp;* https://reports.nlihc.org/oor/hawaii <!-- Also not sure about their sources, but they definitely organize it nicely --><br><br>
+
+				<b>Articles!</b> (Kinda just interesting to compare read through different solutions/takes on the issue)<br>
+				&nbsp;&nbsp;((Also, the comment sections always be wildin))<br>
+				&nbsp;&nbsp;* https://www.hawaiinewsnow.com/2019/02/15/ihs-homeless-people-hawaii-just-got-here-somewhere-else/<br>
+				&nbsp;&nbsp;* https://www.hawaiinewsnow.com/2021/02/15/with-no-signs-housing-prices-cooling-off-advocates-push-government-aid/<br>
+				&nbsp;&nbsp;* https://www.kitv.com/story/41611714/its-perverse-hawaii-senator-alarmed-by-recent-housing-report <!-- for the comment section --><br>
+				&nbsp;&nbsp;* https://www.civilbeat.org/2020/12/how-to-redefine-the-housing-crisis-in-hawaii/ <!-- more just for the compilation of links to dbedt documents --><br>
+			</p>
+		</div>
+
+        <!-- footer -->
+        <!-- <div class="footz">
+            <center>
+                <a href="https://www.linkedin.com"><img src="../src/inc.png" width="28px" height="28px"></a>
+                <a href="https://www.youtube.com"><img src="../src/ytc.png" width="28px" height="28px"></a>
+                <a href="https://www.instagram.com"><img src="../src/igc.png" width="28px" height="28px"></a>
+                <a href="https://github.com"><img src="../src/ghc.png" width="28px" height="28px"></a>
+            </center>
+            <center>
+                <p style="color: black;">© 2021 by yours truly.</p>
+                <p style="color: black;">Brought to you fresh via BaptistBot.</p>
+            </center>
+        </div> -->
+
+        <div style="position: fixed; bottom: 5px; right: 5px; width: 300px; border: 5px solid rgb(216, 138, 255); border-radius: 5px; background-color: rgb(249, 239, 255); padding: 5px;">
+            <p>
+                assignment: <b>An Emoji Argument (A6)</b>
+            </p>
+            <p>
+                documentation: <a href="README.pdf" target="_blank" style="text-decoration: none; font-weight: bold;">author's notes</a>
+            </p>
+            <center>
+                <small>
+                    to return to my main portfolio, please click on the dog house in the upper left-hand corner
+                </small>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
