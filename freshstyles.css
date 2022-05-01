@@ -186,7 +186,7 @@ blockquote, q {
 
 /* change all paragraphs to Lato */
 /* p, small { */
-p, small, li {
+p, small, li, td {
     font-family: Lato;
     /* color: rgb(105, 63, 129); */
     color: #533a7b;
@@ -208,6 +208,19 @@ code {
     font-family: 'Roboto Mono', monospace;
     color: #e83e8c;
 }
+
+th {
+    font-family: Lato;
+    color: #533a7b;
+    font-weight: bold;
+}
+td {
+    padding: 2px 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
 
 hr {
     /* color: #fcd7fd; */
